@@ -1,0 +1,53 @@
+version: "2.0"
+
+stories:
+
+- story: happy path twitter
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: twittersearch
+  - action: action_twitter_search
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path music
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: musicsearch
+  - action: utter_get_music_link
+  - intent: musiclink
+  - action: action_music_world
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path infoweb
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: infoweb
+  - action: utter_infoweb
+  - intent: goodbye
+  - action: utter_goodbye
+
+#
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye

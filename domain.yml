@@ -1,0 +1,51 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - infoweb
+  - twittersearch
+  - musicsearch
+  - musiclink
+
+responses:
+  utter_greet:
+  - text: "Hey!I may help you with listening Music or searching Twitter for crisp tweets. Let me know your choice!!"
+
+  utter_goodbye:
+    - text: "Do visit again for a melodious time."
+    - text: "Looking forward to your next visit."
+    - text: "Goodbye! Pleasure is all mine."
+
+  utter_twitter:
+  - text: "Searching the engine."
+
+  utter_get_music_link:
+  - text: "la la la Ready to sing along !! Enter the song.just add <play> before the song name"
+
+  utter_infoweb:
+  - text: "Please visit at this https://swatipython.pythonanywhere.com/."
+
+  utter_music:
+  - text: "Playing music for you at {link} ."
+
+  utter_except:
+  - text: "Please spell it correctly.I'm having difficulty while looking for it."
+  - text: "Please rephrase your query."
+
+  utter_out_of_scope:
+  - text: "Sorry, I can't handle that request."
+
+  utter_iamabot:
+  - text: "Hey,I'm a bot so this falls beyond my scope."
+  - text: "Being a bot ,I've certain limitations."
+  - text: "I am a bot, powered by Rasa."
+
+actions:
+  - action_music_world
+  - action_twitter_search
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

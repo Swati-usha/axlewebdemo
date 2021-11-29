@@ -1,0 +1,104 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: infoweb
+  examples: |
+    - do you have a website
+    - i want to see your website
+    - please share your website
+    - website please
+    - websi
+    - websitee
+    - any website
+
+- intent: musicsearch
+  examples: |
+    - music
+    - songs
+    - Music
+    - any songs
+    - i want to listen to music
+
+- intent: musiclink
+  examples: |
+    - play rehnuma
+    - okay play jaanejahan
+
+- intent: twittersearch
+  examples: |
+    - can you search on Twitter
+    - Twitter
+    - Look on Twitter
+    - i have a query reagrding search
+    - search
+    - twittteer
+
+
+- intent: goodbye
+  examples: |
+    - That's great
+    - great
+    - thats great
+    - cu
+    - see you
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Thanks
+    - Bye Take care
+    - bye take care
+    - exit
+    - stop
+
+- intent: out_of_scope
+  examples: |
+    - cooking
+    - news
+    - work
+    - party
+    - let us plan a holiday
+    - give me tea
+    - describe this
+    - kya aap gaa sakti ho
+
+
+- intent: bot_challenge
+  examples: |
+    - who
+    - who's
+    - what's your name
+    - your
+    - ur
+    - how
+    - you
+    - why
+    - which
+    - when
+    - are you a bot?
+    - do you eat?
+    - Do u dance?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a human?
