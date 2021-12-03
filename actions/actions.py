@@ -26,7 +26,7 @@ class ActionMusicWorld(Action):
             domain: "DomainDict",) -> List[Dict[Text, Any]]:
         try:
             word = tracker.latest_message['text']
-            api_key = "AIzaSyAoUbOs-8tBbKstvT43xB5ZZayb4klLYj4"
+            api_key = ####################################
             youtube = build('youtube', 'v3', developerKey=api_key)
             # print(type(youtube))
             req = youtube.search().list(q=word, part='snippet', type='video')
